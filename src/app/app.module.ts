@@ -8,6 +8,7 @@ import { HomeComponent } from './form/home/home.component';
 import { GameComponent } from './form/game/game.component';
 import { NotFoundComponent } from './form/not-found/not-found.component';
 import { MenuComponent } from './form/menu/menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MenuComponent } from './form/menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
