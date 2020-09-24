@@ -22,6 +22,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 import {HttpClientModule} from '@angular/common/http';
+import { PicturesComponent } from './form/pictures/pictures.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {HttpClientModule} from '@angular/common/http';
     HomeComponent,
     GameComponent,
     NotFoundComponent,
-    MenuComponent
+    MenuComponent,
+    PicturesComponent
   ],
   imports: [
     BrowserModule,
