@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './form/about/about.component';
-import { HomeComponent } from './form/home/home.component';
+import { HomeComponentForm } from './form/home/home.component';
 import { GameComponent } from './form/game/game.component';
 import { NotFoundComponent } from './form/not-found/not-found.component';
 import { MenuComponent } from './form/menu/menu.component';
@@ -23,16 +23,27 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 import {HttpClientModule} from '@angular/common/http';
 import { PicturesComponent } from './form/pictures/pictures.component';
+import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    HomeComponent,
+    HomeComponentForm,
     GameComponent,
     NotFoundComponent,
     MenuComponent,
-    PicturesComponent
+    PicturesComponent,
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +60,19 @@ import { PicturesComponent } from './form/pictures/pictures.component';
     MatCardModule,
    MatToolbarModule,
 
-    HttpClientModule
+    HttpClientModule,
+
+    LayoutModule,
+
+    MatSidenavModule,
+
+    MatIconModule,
+
+    MatListModule,
+
+    MatGridListModule,
+
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
